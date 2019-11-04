@@ -79,7 +79,7 @@ client.on("messageReactionAdd",(reaction,user)=>{
     if(user.id == client.user.id){
         return
     }
-    if(user.bot){
+    if(!reaction.message.author.bot){
         return
     }
     if(reaction.message.channel.type != "dm"){
