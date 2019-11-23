@@ -139,4 +139,4 @@ client.on("messageReactionAdd",(reaction,user)=>{
         user.message = undefined
     }
 })
-client.login(config.token)
+client.login(process.env.TOKEN)
