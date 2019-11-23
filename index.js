@@ -18,6 +18,9 @@ client.on("message",(message)=>{
         }
         if(user.message != undefined){
             user.message = message.content
+            if(user.isBanned == true){
+                retur
+            }
             modChannel.send(`New message from ${user.tag} (${user.id})! Message: ${user.message}`)
             return
         }
